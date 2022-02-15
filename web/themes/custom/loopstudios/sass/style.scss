@@ -1,4 +1,8 @@
-@use 'variables/colors.scss';
+@use 'variables/colors';
 
-@use 'styles/general';
-@use 'styles/images';
+@use 'components/general';
+@use 'components/images';
+@use 'components/header';
+@use 'components/text-and-image-paragraph';
+@use 'components/case-studies-view';
+@use 'components/footer';
