@@ -1,0 +1,47 @@
+@use 'variables/colors';
+
+.header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    &--top {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 20px;
+
+        @media only screen and (min-width: 850px) {
+            padding: 40px 60px;
+        }
+
+        @media only screen and (min-width: 850px) {
+            padding: 40px 100px;
+        }
+    }
+
+    &--text {
+        color: colors.$white;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin: 20px 30px;
+        max-width: 600px;
+        border: colors.$white 3px solid;
+
+        @media only screen and (min-width: 400px) {
+            font-size: 3rem;
+        }
+        @media only screen and (min-width: 850px) {
+            margin-left: 60px;
+        }
+
+        @media only screen and (min-width: 850px) {
+            margin-left: 100px;
+        }
+    }
+}
+
+.cheeseburger-menu__item {
+    justify-content: center;
+}

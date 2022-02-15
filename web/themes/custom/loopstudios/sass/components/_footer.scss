@@ -1,0 +1,93 @@
+@use 'variables/colors';
+
+.footer {
+    color: white;
+    background-color: black;
+    min-height: 200px;
+
+    @media only screen and (min-width: 700px) {
+        min-height: 160px;
+    }
+    
+    .container {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+
+        @media only screen and (min-width: 700px) {
+            text-align: left;
+            display: flex;
+                justify-content: space-between;
+            padding: 20px 40px;
+            }
+        @media only screen and (min-width: 850px) {
+            padding: 20px 60px;
+        }
+        @media only screen and (min-width: 1100px) {
+            padding: 20px 100px;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-one {
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 60%;
+        @media only screen and (min-width: 700px) {
+            margin: 0;
+            max-width: none;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        #block-sitebranding {
+            padding: 20px;
+            @media only screen and (min-width: 700px) {
+                max-width: 160px;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    #block-views-block-icons-block-1 {
+        margin: 20px 0;
+        li {
+            display: inline;
+            padding-left: 10px;
+        }
+        .icon {
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            
+        }
+
+        @media only screen and (min-width: 700px) {
+            text-align: right;
+        }
+    }
+
+    #block-smalltext {
+        color: colors.$dark-gray;
+    }
+
+    .menu {
+
+        &-item {
+            display: inline;
+
+            @media only screen and (max-width: 700px) {
+                display: block;
+            }
+        }
+    }
+}
