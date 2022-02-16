@@ -56,17 +56,18 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-auto-flow: row;
+            grid-gap: 20px;
 
             @media only screen and (min-width: 850px) {
                 grid-template-columns: 1fr 1fr;
-                grid-gap: 40px 40px;
-                padding-bottom: 40px;
+                grid-gap: 20px 20px;
+                padding-bottom: 20px;
             }
 
             @media only screen and (min-width: 1100px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 20px 20px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
             }
         }
 
@@ -80,7 +81,14 @@
                 bottom: 10px;
                 left: 10px;
                 text-transform: uppercase;
-                max-width: 300px;
+                max-width: 60%;
+                z-index: 1;
+
+                @media only screen and (min-width: 1100px) {
+                    max-width: 300px;
+                    bottom: 15px;
+                    left: 15px;
+                }
             }
             
             a {
@@ -88,24 +96,21 @@
                 text-decoration: none;
             }
 
-            .field-casestudy-image {
-                display: inline-flex;
-                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-                z-index: 1;
+            .gradient {
+                position: relative;
+                display: inline-block;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0));
+                //To stop extra whitespace from appearing
+                font-size: 0;
+
+                img {
+                    position: relative;
+                    z-index: -1;
+                }
+
                 @media only screen and (min-width: 1100px){
-                    display: none;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.60));
                 }
-            }
-
-            .field-casestudy-vertical-image {
-                display: none;
-
-                @media only screen and (min-width: 1100px) {
-                    display: inline-flex;
-                    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
-                    z-index: 1;
-                }
-                
             }
         }
     }
