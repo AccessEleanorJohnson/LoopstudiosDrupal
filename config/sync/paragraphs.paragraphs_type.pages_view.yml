@@ -1,0 +1,10 @@
+uuid: cf62759c-4f67-4666-b8f0-1ee9727430fa
+langcode: en
+status: true
+dependencies: {  }
+id: pages_view
+label: 'Pages view'
+icon_uuid: null
+icon_default: null
+description: 'Show pages'
+behavior_plugins: {  }

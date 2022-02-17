@@ -1,0 +1,26 @@
+uuid: 42f34ef1-28d3-476d-a9d4-23ab01bb1cd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loopstudios
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: loopstudios_page_title
+theme: loopstudios
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

@@ -1,0 +1,53 @@
+uuid: 97146022-2ce1-40a5-856e-d95be9ed573b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.icon.body
+    - field.field.node.icon.field_icon_svg
+    - field.field.node.icon.field_icon_url
+    - field.field.node.icon.field_url_text
+    - node.type.icon
+  module:
+    - link
+    - svg_image_field
+    - user
+id: node.icon.teaser
+targetEntityType: node
+bundle: icon
+mode: teaser
+content:
+  field_icon_svg:
+    type: svg_image_field_formatter
+    label: above
+    settings:
+      inline: false
+      apply_dimensions: true
+      width: 25
+      height: 25
+      enable_alt: true
+      enable_title: true
+      link: ''
+      force_fill: false
+      sanitize: true
+      sanitize_remote: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_url_text: true
+  links: true

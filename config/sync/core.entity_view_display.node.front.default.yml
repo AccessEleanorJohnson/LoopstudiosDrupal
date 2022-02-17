@@ -1,0 +1,32 @@
+uuid: 64b1d574-78b8-4e8b-b7dc-dc6ccfdb9aa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front.body
+    - field.field.node.front.field_front_paragraph
+    - node.type.front
+  module:
+    - entity_reference_revisions
+    - user
+id: node.front.default
+targetEntityType: node
+bundle: front
+mode: default
+content:
+  field_front_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true

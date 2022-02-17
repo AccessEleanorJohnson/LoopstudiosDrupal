@@ -1,0 +1,55 @@
+uuid: 27824cb4-622d-42b5-9fad-977b7cc5b0dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page.body
+    - field.field.node.front_page.field_paragraph
+    - node.type.front_page
+  module:
+    - paragraphs
+    - path
+id: node.front_page.default
+targetEntityType: node
+bundle: front_page
+mode: default
+content:
+  field_paragraph:
+    type: entity_reference_paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  promote: true
+  sticky: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: 02d0b906-e941-4e48-91e2-a8422ddf8666
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loopstudios
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: loopstudios_breadcrumbs
+theme: loopstudios
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

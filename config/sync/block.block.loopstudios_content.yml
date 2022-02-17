@@ -1,0 +1,22 @@
+uuid: 5bc66b0a-61ab-4878-9ff9-9933762dd708
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loopstudios
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: loopstudios_content
+theme: loopstudios
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

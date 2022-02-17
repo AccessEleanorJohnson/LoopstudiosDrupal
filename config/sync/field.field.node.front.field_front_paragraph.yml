@@ -1,0 +1,32 @@
+uuid: 844fd2ae-e2f6-41a8-8926-08bfa38911ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_front_paragraph
+    - node.type.front
+  module:
+    - entity_reference_revisions
+id: node.front.field_front_paragraph
+field_name: field_front_paragraph
+entity_type: node
+bundle: front
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      test_paragraph:
+        weight: 3
+        enabled: false
+      text_and_image_paragraph:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

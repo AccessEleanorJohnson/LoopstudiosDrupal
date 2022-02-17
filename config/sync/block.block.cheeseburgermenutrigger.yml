@@ -1,0 +1,25 @@
+uuid: ffdb9aa0-2806-4243-a1f1-56daf889c8ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.cheeseburgermenu
+  module:
+    - cheeseburger_menu
+  theme:
+    - loopstudios
+id: cheeseburgermenutrigger
+theme: loopstudios
+region: primary_menu
+weight: 0
+provider: null
+plugin: cheeseburger_menu_trigger
+settings:
+  id: cheeseburger_menu_trigger
+  label: 'Cheeseburger menu trigger'
+  label_display: '0'
+  provider: cheeseburger_menu
+  block_to_trigger: cheeseburgermenu
+  breakpoints: {  }
+  custom_media_query: 'all and (min-width: 850px)'
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: f005f4c8-df22-440b-af9f-0afa9b04dcb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_text
+    - node.type.icon
+id: node.icon.field_url_text
+field_name: field_url_text
+entity_type: node
+bundle: icon
+label: Url
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

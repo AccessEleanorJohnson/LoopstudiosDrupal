@@ -1,0 +1,29 @@
+uuid: 08ed7029-5ea3-465e-be76-6ac548c18500
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.case_studies
+  module:
+    - system
+    - views
+  theme:
+    - loopstudios
+id: views_block__case_studies_block_1
+theme: loopstudios
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:case_studies-block_1'
+settings:
+  id: 'views_block:case_studies-block_1'
+  label: 'Our Creations'
+  label_display: visible
+  provider: views
+  views_label: 'Our Creations'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

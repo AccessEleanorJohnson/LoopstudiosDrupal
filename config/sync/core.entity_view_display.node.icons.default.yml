@@ -1,0 +1,28 @@
+uuid: 16230b02-d4f0-49db-87ac-2c892636c4f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.icons.body
+    - field.field.node.icons.field_icons_icon
+    - node.type.icons
+  module:
+    - entity_reference_revisions
+    - user
+id: node.icons.default
+targetEntityType: node
+bundle: icons
+mode: default
+content:
+  field_icons_icon:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  links: true

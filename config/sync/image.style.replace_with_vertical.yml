@@ -1,0 +1,15 @@
+uuid: daaa7d02-08c1-48f7-afd5-9c55fd89a708
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_replace
+name: replace_with_vertical
+label: 'Replace with Vertical'
+effects:
+  85d275a1-01d5-4f6a-bee1-8fb5a02d5a2a:
+    uuid: 85d275a1-01d5-4f6a-bee1-8fb5a02d5a2a
+    id: image_replace
+    weight: 1
+    data:
+      image_style: replace_with_vertical
