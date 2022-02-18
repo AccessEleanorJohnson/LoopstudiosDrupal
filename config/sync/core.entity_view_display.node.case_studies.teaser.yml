@@ -1,0 +1,31 @@
+uuid: 844f4ad4-9ef3-4938-91d4-0fb5b5ee4ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.case_studies.body
+    - field.field.node.case_studies.field_casestudy_image
+    - field.field.node.case_studies.field_casestudy_vertical_image
+    - node.type.case_studies
+  module:
+    - image
+    - user
+id: node.case_studies.teaser
+targetEntityType: node
+bundle: case_studies
+mode: teaser
+content:
+  field_casestudy_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_casestudy_vertical_image: true
+  links: true

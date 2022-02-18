@@ -1,0 +1,17 @@
+uuid: 50628226-e504-49c4-8a7a-2eced6629414
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Icon
+type: icon
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

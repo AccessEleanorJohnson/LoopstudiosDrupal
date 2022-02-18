@@ -1,0 +1,24 @@
+uuid: 6cf0be08-b0c3-4c6b-97cb-f4cd65cc5e1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_icon.field_paragraph_icon_icon
+    - paragraphs.paragraphs_type.paragraph_icon
+  module:
+    - image
+id: paragraph.paragraph_icon.default
+targetEntityType: paragraph
+bundle: paragraph_icon
+mode: default
+content:
+  field_paragraph_icon_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

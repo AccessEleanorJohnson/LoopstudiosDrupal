@@ -1,0 +1,24 @@
+uuid: fd9b7b5d-9a93-499d-961b-c429aa9ec92c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.icons
+  module:
+    - views
+  theme:
+    - loopstudios
+id: views_block__icons_block_1
+theme: loopstudios
+region: footer_two
+weight: 0
+provider: null
+plugin: 'views_block:icons-block_1'
+settings:
+  id: 'views_block:icons-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

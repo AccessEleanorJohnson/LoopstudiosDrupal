@@ -1,0 +1,10 @@
+uuid: a875cb60-fc47-4a59-ac7e-943d15f56f46
+langcode: en
+status: true
+dependencies: {  }
+id: test_paragraph
+label: 'Test paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

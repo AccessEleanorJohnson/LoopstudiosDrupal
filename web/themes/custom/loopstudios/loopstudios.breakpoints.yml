@@ -1,0 +1,55 @@
+loopstudios.all:
+  label: All
+  mediaQuery: ''
+  weight: 1
+  multipliers:
+    - 1x
+  group: Loopstudios Layout
+
+loopstudios.phone:
+  label: Phone
+  mediaQuery: 'all and (min-width: 320px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: Loopstudios Layout
+
+loopstudios.phablet:
+  label: Phablet
+  mediaQuery: 'all and (min-width: 600px)'
+  weight: 3
+  multipliers:
+    - 1x
+  group: Loopstudios Layout
+
+loopstudios.tablet:
+  label: Tablet
+  mediaQuery: 'all and (min-width: 800px)'
+  weight: 4
+  multipliers:
+    - 1x
+  group: Loopstudios Layout
+
+loopstudios.laptop:
+  label: Laptop
+  mediaQuery: 'all and (min-width: 1024px)'
+  weight: 5
+  multipliers:
+    - 1x
+  group: Loopstudios Layout
+
+loopstudios.desktop:
+  label: Desktop
+  mediaQuery: 'all and (min-width: 1100px)'
+  weight: 6
+  multipliers:
+    - 1x
+  group: Loopstudios Layout
+
+loopstudios.wide:
+  label: Wide
+  mediaQuery: 'all and (min-width: 1440px)'
+  weight: 7
+  multipliers:
+    - 1x
+  group: Loopstudios Layout

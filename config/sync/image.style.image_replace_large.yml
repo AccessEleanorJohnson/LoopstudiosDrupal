@@ -1,0 +1,15 @@
+uuid: 97205ca7-787d-46c8-9d5c-cc3a7f75a227
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_replace
+name: image_replace_large
+label: 'Image Replace Large'
+effects:
+  3d84b50b-5b76-4e5d-8586-99542a4af1c7:
+    uuid: 3d84b50b-5b76-4e5d-8586-99542a4af1c7
+    id: image_replace
+    weight: 1
+    data:
+      image_style: image_replace_large

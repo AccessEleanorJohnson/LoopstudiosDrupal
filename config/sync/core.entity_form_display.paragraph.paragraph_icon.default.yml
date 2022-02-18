@@ -1,0 +1,26 @@
+uuid: db5e38ea-b767-49dc-a46d-980a3b4769b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_icon.field_paragraph_icon_icon
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.paragraph_icon
+  module:
+    - image
+id: paragraph.paragraph_icon.default
+targetEntityType: paragraph
+bundle: paragraph_icon
+mode: default
+content:
+  field_paragraph_icon_icon:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

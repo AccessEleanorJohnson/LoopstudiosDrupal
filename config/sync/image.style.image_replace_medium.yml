@@ -1,0 +1,15 @@
+uuid: 535ddead-e5ee-407a-893e-564563c36ddb
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_replace
+name: image_replace_medium
+label: 'Image Replace Medium'
+effects:
+  460ef0a3-79ae-494a-862f-eb4aa35ecac1:
+    uuid: 460ef0a3-79ae-494a-862f-eb4aa35ecac1
+    id: image_replace
+    weight: 1
+    data:
+      image_style: image_replace_medium

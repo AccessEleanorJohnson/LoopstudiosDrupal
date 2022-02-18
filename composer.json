@@ -21,6 +21,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/image_replace": "^1.0",
         "drupal/paragraphs": "^1.12",
         "drupal/svg_image_field": "^2.1",
         "drush/drush": "^10.6"

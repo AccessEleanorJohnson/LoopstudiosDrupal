@@ -1,0 +1,46 @@
+uuid: db59195f-6f46-4a9c-bb3e-1511f34853d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_medium
+    - node.type.article
+  module:
+    - image
+    - image_replace
+third_party_settings:
+  image_replace:
+    image_style_map:
+      image_replace_large:
+        source_field: '0'
+      image_replace_medium:
+        source_field: '0'
+id: node.article.field_image_medium
+field_name: field_image_medium
+entity_type: node
+bundle: article
+label: 'Image Medium'
+description: 'Image used on 600px - 1100px sized screens'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

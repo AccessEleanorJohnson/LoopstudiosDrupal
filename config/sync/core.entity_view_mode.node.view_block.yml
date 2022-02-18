@@ -1,0 +1,10 @@
+uuid: cf83c3d3-a894-420b-8d43-6564f6d35011
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.view_block
+label: 'View block'
+targetEntityType: node
+cache: true

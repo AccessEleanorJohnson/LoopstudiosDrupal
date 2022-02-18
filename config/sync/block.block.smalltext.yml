@@ -1,0 +1,25 @@
+uuid: 32b42eed-9aed-40eb-9afd-f746cb856c24
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c6681c7-a82e-4712-8de6-8befc741fdd2'
+  module:
+    - block_content
+  theme:
+    - loopstudios
+id: smalltext
+theme: loopstudios
+region: footer_two
+weight: 0
+provider: null
+plugin: 'block_content:4c6681c7-a82e-4712-8de6-8befc741fdd2'
+settings:
+  id: 'block_content:4c6681c7-a82e-4712-8de6-8befc741fdd2'
+  label: 'Small text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

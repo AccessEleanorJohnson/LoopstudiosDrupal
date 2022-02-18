@@ -1,0 +1,23 @@
+uuid: 0df3f295-e191-4fc1-9981-b040d9a54ff8
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.replace_with_vertical
+  theme:
+    - loopstudios
+id: replace_with_vertical
+label: 'Replace With Vertical'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: replace_with_vertical
+    breakpoint_id: loopstudios.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: '_original image_'
+    breakpoint_id: loopstudios.all
+    multiplier: 1x
+breakpoint_group: 'Loopstudios Layout'
+fallback_image_style: '_original image_'

@@ -1,0 +1,40 @@
+uuid: 6c1a8a4e-00f4-4e6d-b071-ea6547653a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icons_icon
+    - node.type.icons
+    - paragraphs.paragraphs_type.paragraph_icon
+  module:
+    - entity_reference_revisions
+id: node.icons.field_icons_icon
+field_name: field_icons_icon
+entity_type: node
+bundle: icons
+label: Icons_icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_icon: paragraph_icon
+    negate: 0
+    target_bundles_drag_drop:
+      pages_view:
+        weight: 5
+        enabled: false
+      paragraph_icon:
+        weight: 6
+        enabled: true
+      test_paragraph:
+        weight: 7
+        enabled: false
+      text_and_image_paragraph:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

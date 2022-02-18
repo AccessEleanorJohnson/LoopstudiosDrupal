@@ -1,0 +1,29 @@
+uuid: 6e210bac-9720-4241-b115-7713e3fb7656
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.image_replace_large
+    - image.style.image_replace_medium
+  theme:
+    - loopstudios
+id: image_replace
+label: 'Image Replace'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: image_replace_large
+    breakpoint_id: loopstudios.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: image_replace_medium
+    breakpoint_id: loopstudios.phablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: '_original image_'
+    breakpoint_id: loopstudios.all
+    multiplier: 1x
+breakpoint_group: 'Loopstudios Layout'
+fallback_image_style: '_original image_'

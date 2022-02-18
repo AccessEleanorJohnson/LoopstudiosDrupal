@@ -1,0 +1,20 @@
+uuid: edc56c39-5bc6-44ff-b271-bb62df47362d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - loopstudios
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: loopstudios_local_actions
+theme: loopstudios
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
